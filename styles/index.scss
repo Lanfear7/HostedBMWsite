@@ -1,0 +1,56 @@
+@import './components/_navbar.scss';
+@import './components/_portfolio.scss';
+@import './components/_About.scss';
+@import './components/_AboutPage.scss';
+@import './components/_Contact.scss';
+@import './components/_ContactPage.scss';
+@import './components/_Services.scss';
+@import './components/_Process.scss';
+@import './components/_StandOut.scss';
+@import './components/_Footer.scss';
+@import './components/_GalleryPage.scss';
+$bmwGray : #292929;
+$bmwBlue: #5d86df;
+
+p{
+    font-size: 20px;
+}
+.Home-Container{
+    .Banner{
+        background-color: $bmwGray;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .Logo{
+            width: 450px;
+            height: 400px;
+            margin: 0%;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        h1{
+            
+            font-family: 'Paytone One';
+            color: #ffffff;
+            font-size: 45px;
+            width: 600px;
+            margin: 0%;
+            margin-left: 20%;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Banner{
+        .Logo{
+            display: none;
+        }
+    }
+    
+  }

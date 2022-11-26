@@ -1,0 +1,46 @@
+$bmwGray : #292929;
+$bmwBlue: #5d86df;
+.Portfolio-Container{
+    margin-top: 30px;
+    .Image-Container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        .Card{
+            width: 100%;
+            height: 500px;
+            flex-basis: 70%;
+            margin-top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            .Image-Holder{
+                margin: 0%;
+                height: 400px;
+                width: 200px;
+                flex-basis: 400px; 
+                box-shadow: -15px -15px $bmwBlue;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 15px 15px $bmwGray;
+
+                }
+            }
+            .Content{
+                width: 50%;
+                padding-right: 75px;
+            }
+        }
+        .Card:hover{
+            cursor: pointer;
+        }
+        .Card2{
+            .Content{
+                padding-left: 75px;
+            }
+        }
+    }
+}

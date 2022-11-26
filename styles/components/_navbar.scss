@@ -1,0 +1,85 @@
+$bmwBlue: #5d86df;
+
+.Navbar-Container{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    .links{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        .Logo{
+            width: 200px;
+            height: 150px;
+            margin: 0%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .socialmedia{
+            display: flex;
+            align-items: flex-end;
+            width: 150px;
+                .FaceBook{
+                    margin: 0%;
+                    width: 80px;
+                    height: 50px;
+                }
+                .Instagram{
+                    margin: 0%;
+                    width: 50px;
+                    height: 50px;
+                    img{
+                        object-fit: fill;
+                    }
+                }
+                figure{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            padding: 0%;
+            h2{
+                width: 150px;
+                text-align: center;
+            }
+            h2:hover{
+                border-bottom: 1px solid $bmwBlue;
+                color: $bmwBlue;
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .Navbar-Container{
+        height: 250px;
+        .links{
+            width: 100%;
+            height: 105px;
+        }
+        nav{
+            ul{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+    
+  }

@@ -1,0 +1,123 @@
+.Process-Container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   .Process-Content{
+    flex-basis: 50%;
+    padding: 0px 0px 0px 200px;
+    h1{
+        border-bottom: $bmwBlue 1px solid;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    ul li:before {
+        content: '✓';
+        color: white;
+        background-color: $bmwBlue;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-radius: 25px;
+      }
+   } 
+   .Process-Image{
+        flex-basis: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+   figure{
+        width: 400px;
+        height: 450px;
+        box-shadow: -15px -15px $bmwBlue;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 15px 15px $bmwGray;
+    }
+   }
+}
+
+@media only screen and (max-width: 1450px) {
+    .Process-Container{
+        padding: 50px 0px 50px 0px;
+        height: 100%;
+        .Process-Content{
+            flex-basis: 100%;
+            padding: 0px 200px 0px 200px;
+        }
+        .Process-Image{
+            flex-basis: 100%;
+            justify-content: end;
+            margin-right: 200px;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .Process-Container{
+        padding: 50px 0px 50px 0px;
+        height: 100%;
+        .Process-Content{
+            flex-basis: 100%;
+            padding: 0px 200px 0px 200px;
+        }
+        .Process-Image{
+            flex-basis: 100%;
+            justify-content: center;
+            margin: 0px;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .Process-Container{
+        padding: 50px 0px 50px 0px;
+        height: 100%;
+        .Process-Content{
+            flex-basis: 100%;
+            padding: 0px 100px 0px 100px;
+            ul{
+                padding: 0%;
+            }
+        }
+        .Process-Image{
+            flex-basis: 100%;
+            justify-content: center;
+            margin: 0px;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .Process-Container{
+        padding: 50px 0px 50px 0px;
+        height: 100%;
+        .Process-Content{
+            flex-basis: 100%;
+            padding: 0px 10px 0px 10px;
+            ul{
+                padding: 0%;
+            }
+        }
+        .Process-Image{
+            flex-basis: 100%;
+            justify-content: center;
+            margin: 0px;
+        }
+    }
+  }

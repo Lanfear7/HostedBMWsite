@@ -1,0 +1,65 @@
+$bmwGray : #292929;
+$bmwBlue: #5d86df;
+.Footer-Container{
+    background-color: $bmwGray;
+    border-top: 5px solid $bmwBlue;
+    color: $bmwBlue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    p, li{
+        color: white;
+        cursor: pointer;
+    }
+    ul{
+        list-style: none;
+    }
+    .Footer-Card{
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Footer-Container{
+        background-color: $bmwGray;
+        border-top: 5px solid $bmwBlue;
+        color: $bmwBlue;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        footer{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 100px;
+        }
+        .Footer-Card{
+            flex-basis: 60%;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .Footer-Container{
+        background-color: $bmwGray;
+        border-top: 5px solid $bmwBlue;
+        color: $bmwBlue;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        footer{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 50px;
+        }
+        .Footer-Card{
+            flex-basis: 60%;
+        }
+    }
+  }

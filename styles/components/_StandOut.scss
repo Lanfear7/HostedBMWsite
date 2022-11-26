@@ -1,0 +1,109 @@
+.StandOut-Container{
+    width: 100%;
+    height: 90vh;
+    padding: 0px 150px 0px 150px;
+    h1, p{
+        margin: 0%;
+    }
+    .Heading{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .StandOut-Cards{
+        padding-top: 100px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .StandOut-Card{
+            height: 100%;
+            flex-basis: 40%;
+            border: 1px solid $bmwBlue;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            h1:before {
+                content: '✓';
+                color: white;
+                background-color: $bmwBlue;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: 10px;
+                border-radius: 25px;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .StandOut-Container{
+        padding: 0px 100px 0px 100px;
+        .Heading{
+        }
+        .StandOut-Cards{
+            .StandOut-Card{
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1360px) {
+    .StandOut-Container{
+        padding: 0%;
+        .Heading{
+        }
+        .StandOut-Cards{
+            .StandOut-Card{
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1160px) {
+    .StandOut-Container{
+        padding: 0%;
+        height: 1250px;
+        .Heading{
+        }
+        .StandOut-Cards{
+            .StandOut-Card{
+                flex-basis: 70%;
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    .StandOut-Container{
+        padding: 0%;
+        height: 1750px;
+        .Heading{
+        }
+        .StandOut-Cards{
+            .StandOut-Card{
+                flex-basis: 70%;
+                height: 350px;
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .StandOut-Container{
+        padding: 0%;
+        height: 2400px;
+        .Heading{
+        }
+        .StandOut-Cards{
+            .StandOut-Card{
+                flex-basis: 70%;
+                height: 500px;
+            }
+        }
+    }
+  }
