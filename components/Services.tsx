@@ -2,6 +2,7 @@ import React from 'react'
 
 import BluePrint from '../public/Services/BluePrints.jpg'
 import IndoorAndOutDoor from '../public/Services/Oak-Bench.png'
+import CuttingAndCharcuterieBoards from '../public/Services/CuttingAndCharcuterieBoards.jpg'
 
 function Services() {
   return (
@@ -19,13 +20,13 @@ function Services() {
                 <p>Create the perfect cutting or charcuterie board for your kitchen. From face grain to end grain cutting boards and even live edge charcuterie board we do it all!</p>
                 <button>Check It Out</button>
                 <figure>
-                    <img ></img>
+                    <img src={CuttingAndCharcuterieBoards.src}></img>
                 </figure>
             </div>
             
             <div className='Services-Card Card2'>
                 <h2>Indoor & Outdoor Furniture</h2>
-                <p>First impressions are important so why not stand out with a custom pice of interior or exterior furniture to make those long lasting impressions and `&apos;`wow`&apos;` your guests.</p>
+                <p>First impressions are important so why not stand out with a custom pice of interior or exterior furniture to make those long lasting impressions and &apos;wow&apos; your guests.</p>
                 <button>Check It Out</button>
                 <figure>
                     <img src={IndoorAndOutDoor.src}></img>
@@ -34,7 +35,7 @@ function Services() {
 
             <div className='Services-Card Card3'>
                 <h2>Custom Order</h2>
-                <p>At Blue Monkeys Woodworking we believe we make more then just furniture, We make an experience and we would love to make you apart of that experience and make your furniture dreams reality!</p>
+                <p>At Blue Monkeys Woodworking we believe we make more then just furniture, We make an experience and we would love to make you a part of that experience and make your furniture dreams reality!</p>
                 <button>Get In Touch</button>
                 <figure>
                     <img src={BluePrint.src}></img>

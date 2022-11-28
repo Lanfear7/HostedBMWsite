@@ -7,7 +7,8 @@ import OakBench from '../public/portfolio/Oak-Bench.png'
 import WhitePineEntryTable from '../public/portfolio/White-Pine-Entry-Table.jpg'
 import EdgeGrainCuttingBoard from '../public/portfolio/Edge-Grain-Cutting-Board.png'
 import WhitePineSideTable from '../public/portfolio/White-Pine-End-Table.jpg'
-import IndoorAndOutDoor from '../public/Services/Oak-Bench.png'
+import CheckerButchBlock from '../public/portfolio/CheckerButchBlock.jpg'
+import CuttingAndCharcuterieBoards from '../public/Services/CuttingAndCharcuterieBoards.jpg'
 
 function gallery() {
   return (
@@ -20,7 +21,7 @@ function gallery() {
         <div className='Gallery-Page'>
           <div className='Gallery-Card'>
             <figure>
-              <img src={FaceGrainCuttingBoard.src}></img>
+              <img src={CuttingAndCharcuterieBoards.src}></img>
             </figure>
           </div>
           <div className='Gallery-Card'>
@@ -41,6 +42,11 @@ function gallery() {
           <div className='Gallery-Card'>
             <figure>
               <img src={WhitePineSideTable.src}></img>
+            </figure>
+          </div>
+          <div className='Gallery-Card'>
+            <figure>
+              <img src={CheckerButchBlock.src}></img>
             </figure>
           </div>
         </div>

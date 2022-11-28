@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import Gallery from '../components/Gallery'
 
-import Groilla from '../public/Logo-Transparent.png'
+import Gorilla from '../public/Logo-Transparent.png'
 import BMW from '../public/BMW-Transparent-Name.png'
 import { useSpring,animated } from 'react-spring'
 import About from '../components/About'
@@ -35,7 +34,7 @@ export default function Home() {
       <Navbar />
       <div className='Banner'>
         <animated.figure className='Logo' style={GorillaAnimation}>
-          <img src={Groilla.src}></img>
+          <img src={Gorilla.src}></img>
         </animated.figure>
         <animated.h1 style={BannerHeader}>Transform Your Home Turn Your Furniture Dreams Into Reality </animated.h1>
       </div>
