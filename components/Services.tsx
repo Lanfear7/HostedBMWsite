@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import BluePrint from '../public/Services/BluePrints.jpg'
 import IndoorAndOutDoor from '../public/Services/Oak-Bench.png'
 import CuttingAndCharcuterieBoards from '../public/Services/CuttingAndCharcuterieBoards.jpg'
@@ -18,7 +18,7 @@ function Services() {
             <div className='Services-Card Card1'>
                 <h2>Cutting Boards/Charcuterie Board</h2>
                 <p>Create the perfect cutting or charcuterie board for your kitchen. From face grain to end grain cutting boards and even live edge charcuterie board we do it all!</p>
-                <button>Check It Out</button>
+                <button><Link href='/gallery'>Check It Out</Link></button>
                 <figure>
                     <img src={CuttingAndCharcuterieBoards.src}></img>
                 </figure>
@@ -27,7 +27,7 @@ function Services() {
             <div className='Services-Card Card2'>
                 <h2>Indoor & Outdoor Furniture</h2>
                 <p>First impressions are important so why not stand out with a custom pice of interior or exterior furniture to make those long lasting impressions and &apos;wow&apos; your guests.</p>
-                <button>Check It Out</button>
+                <button><Link href='/gallery'>Check It Out</Link></button>
                 <figure>
                     <img src={IndoorAndOutDoor.src}></img>
                 </figure>
@@ -36,7 +36,7 @@ function Services() {
             <div className='Services-Card Card3'>
                 <h2>Custom Order</h2>
                 <p>At Blue Monkeys Woodworking we believe we make more then just furniture, We make an experience and we would love to make you a part of that experience and make your furniture dreams reality!</p>
-                <button>Get In Touch</button>
+                <button><Link href='/contact'>Get In Touch</Link></button>
                 <figure>
                     <img src={BluePrint.src}></img>
                 </figure>
