@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import BMW_Logo from '../public/Logo-Transparent.png'
-import FaceBookImage from '../public/Facebook-Logo.png'
-import FaceBookImageHover from '../public/Facebook-Logo-Hover.png'
 import InstagramImage from '../public/Instagram-Logo.png'
 import InstagramImageHover from '../public/Instagram-Logo-Hover.png'
 
@@ -29,16 +27,6 @@ function Navbar() {
                 </Link>
             </figure>
             <div className='socialmedia'>
-                    <figure className='FaceBook' onMouseEnter={()=>{setFbHover(true)}} onMouseLeave={()=>{setFbHover(false)}}>
-                        {
-                            fbHover ?   <Link href='https://www.facebook.com/BlueMonkeysWoodworking/'>
-                                            <img src={FaceBookImageHover.src}></img>
-                                        </Link>
-                                    :   <Link href='https://www.facebook.com/BlueMonkeysWoodworking/'>
-                                            <img src={FaceBookImage.src}></img>
-                                        </Link>
-                        }
-                    </figure>
                     <figure className='Instagram' onMouseEnter={()=>{setInstagramHover(true)}} onMouseLeave={()=>{setInstagramHover(false)}}>
                         {
                             InstagramHover  ?   <Link href='https://www.instagram.com/blue_monkeys_woodworking/?next=%2F'>
